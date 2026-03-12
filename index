@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NiyuktiAssam | Jobs, Study Material & Resume</title>
+    <meta name="description" content="Get the latest govt jobs in Assam, ADRE Grade III & IV study materials, and a premium free resume generator.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header glass-panel">
+        <div class="header-container">
+            <div class="brand">
+                <img src="logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Niyukti<span>Assam</span></div>
+            </div>
+            
+            <nav class="top-tabs">
+                <a href="index.html" class="tab active"><span class="material-icons">home</span> Home</a>
+                <a href="jobs.html" class="tab"><span class="material-icons">work</span> Jobs</a>
+                <a href="resume.html" class="tab"><span class="material-icons">description</span> Resume</a>
+                <a href="study.html" class="tab"><span class="material-icons">menu_book</span> Study</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+        
+        <main class="content-area">
+            
+            <div class="layout-grid">
+                
+                <aside class="ad-sidebar left-ad">
+                    <div class="ad-placeholder glass-panel">
+                        <span class="material-icons">monetization_on</span>
+                        <span>Left Ad Space</span>
+                    </div>
+                </aside>
+
+                <div class="center-content">
+                    
+                    <section class="hero glass-panel">
+                        <h1>Welcome to NiyuktiAssam</h1>
+                        <p>Your one-stop premium platform for Assam Govt Jobs, ADRE study materials, and professional resumes.</p>
+                        <button class="action-btn"><span class="material-icons">post_add</span> Create Free Resume</button>
+                    </section>
+
+                    <div class="premium-unified-card">
+                        <a href="jobs.html" class="unified-item"><span class="material-icons">campaign</span> Latest Jobs</a>
+                        <div class="card-divider"></div>
+                        <a href="study.html" class="unified-item"><span class="material-icons">picture_as_pdf</span> Study PDF</a>
+                        <div class="card-divider"></div>
+                        <a href="admissions.html" class="unified-item"><span class="material-icons">school</span> Admissions</a>
+                    </div>
+
+                </div>
+
+                <aside class="ad-sidebar right-ad">
+                    <div class="ad-placeholder glass-panel">
+                        <span class="material-icons">monetization_on</span>
+                        <span>Right Ad Space</span>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="mobile-ad-banner glass-panel">
+                <span class="material-icons">monetization_on</span>
+                <span>Mobile AdSense Banner</span>
+                <small>300x250 (Best for Phones)</small>
+            </div>
+
+        </main>
+
+        <footer class="main-footer glass-panel">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Niyukti<span>Assam</span></h2>
+                    <p>Empowering the youth of Assam with the latest job updates, premium study materials, and smart career tools.</p>
+                    <div class="footer-social">
+                        <h4>Connect & Share</h4>
+                        <div class="social-icons-wrapper">
+                            <a href="#" class="social-btn" title="Share Website"><span class="material-icons">share</span></a>
+                            <a href="#" class="social-btn" title="Facebook"><span class="material-icons">facebook</span></a>
+                            <a href="#" class="social-btn" title="Instagram"><span class="material-icons">camera_alt</span></a>
+                            <a href="#" class="social-btn" title="WhatsApp"><span class="material-icons">chat</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore Portal</h3>
+                    <a href="jobs.html"><span class="material-icons">chevron_right</span> Latest Jobs</a>
+                    <a href="study.html"><span class="material-icons">chevron_right</span> Study Materials</a>
+                    <a href="resume.html"><span class="material-icons">chevron_right</span> Resume Generator</a>
+                </div>
+
+                <div class="footer-legal">
+                    <h3>Legal & Support</h3>
+                    <a href="about.html"><span class="material-icons">chevron_right</span> About Us</a>
+                    <a href="contact.html"><span class="material-icons">chevron_right</span> Contact Us</a>
+                    <a href="privacy.html"><span class="material-icons">chevron_right</span> Privacy Policy</a>
+                    <a href="disclaimer.html"><span class="material-icons">chevron_right</span> Disclaimer</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NiyuktiAssam. All rights reserved. Designed for Excellence.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

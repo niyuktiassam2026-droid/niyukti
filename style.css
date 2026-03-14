@@ -70,7 +70,7 @@ body {
 .footer-content { display: flex; flex-direction: column; gap: 40px; max-width: 1400px; margin: 0 auto 30px; }
 .footer-brand h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; }
 .footer-brand span { color: #4a90e2; }
-.footer-brand p { font-size: 0.95rem; color: #444; line-height: 1.6; margin-bottom: 20px; }
+.footer-brand p { font-size: 0.95rem; color: #444; line-height: 1.6; margin-bottom: 20px; text-align: justify;}
 .footer-social h4 { font-size: 1rem; color: #1a252f; margin-bottom: 15px; font-weight: 600; }
 .social-icons-wrapper { display: flex; gap: 15px; }
 .social-btn { 

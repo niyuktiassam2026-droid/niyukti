@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <title>Latest Govt Jobs in Assam 2026 | NiyuktiAssam</title>
-    <meta name="description" content="Find the latest Assam government jobs, ADRE study materials, and a premium free resume generator.">
+    <meta name="title" content="Latest Govt Jobs in Assam 2026 | NiyuktiAssam">
+    <meta name="description" content="Explore the latest Assam government jobs, ADRE Grade III & IV updates, Assam Police recruitment, and detailed study materials. Apply online today.">
+    <meta name="keywords" content="Assam govt jobs 2026, latest jobs in Assam, ADRE recruitment, Assam Police vacancy, SSC GD Assam, apply online jobs Assam">
+    <meta name="author" content="NiyuktiAssam">
+    
+    <link rel="canonical" href="https://niyuktiassam.in/jobs.html" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://niyuktiassam.in/jobs.html">
+    <meta property="og:title" content="Latest Govt Jobs in Assam | Apply Now">
+    <meta property="og:description" content="Find the latest Assam government jobs, ADRE updates, and detailed study materials.">
+    <meta property="og:image" content="https://niyuktiassam.in/assets/jobs-cover.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://niyuktiassam.in/jobs.html">
+    <meta property="twitter:title" content="Latest Govt Jobs in Assam | Apply Now">
+    <meta property="twitter:description" content="Find the latest Assam government jobs, ADRE updates, and detailed study materials.">
+    <meta property="twitter:image" content="https://niyuktiassam.in/assets/jobs-cover.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Latest Govt Jobs in Assam",
+      "url": "https://niyuktiassam.in/jobs.html",
+      "description": "A comprehensive list of the latest government job vacancies and recruitment updates in Assam."
+    }
+    </script>
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,12 +44,12 @@
     <header class="main-header glass-panel">
         <div class="header-container">
             <div class="brand">
-                <img src="logo.png" alt="Logo" class="logo-img">
+                <img src="logo.png" alt="NiyuktiAssam Logo" class="logo-img">
                 <div class="logo-text">Niyukti<span>Assam</span></div>
             </div>
-            <nav class="top-tabs">
+            <nav class="top-tabs" aria-label="Main Navigation">
                 <a href="index.html" class="tab"><span class="material-icons">home</span> Home</a>
-                <a href="jobs.html" class="tab active"><span class="material-icons">work</span> Jobs</a>
+                <a href="jobs.html" class="tab active" aria-current="page"><span class="material-icons">work</span> Jobs</a>
                 <a href="resume.html" class="tab"><span class="material-icons">description</span> Resume</a>
                 <a href="study.html" class="tab"><span class="material-icons">menu_book</span> Study</a>
             </nav>
@@ -34,135 +61,124 @@
             
             <div class="jobs-feed-container">
                 
-                <div class="page-header glass-panel">
+                <section class="page-header glass-panel">
                     <h1>Explore Latest Jobs</h1>
-                    <div class="search-box">
-                        <span class="material-icons">search</span>
-                        <input type="text" id="searchInput" placeholder="Search ADRE, Assam Police, SSC...">
-                        <button>Search</button>
-                    </div>
-                </div>
+                    <form class="search-box" onsubmit="event.preventDefault();" role="search">
+                        <span class="material-icons" aria-hidden="true">search</span>
+                        <input type="search" id="searchInput" aria-label="Search job updates" placeholder="Search ADRE, Assam Police, SSC...">
+                        <button type="submit" aria-label="Start search">Search</button>
+                    </form>
+                </section>
 
-                <article class="job-card glass-panel">
-                    <div class="job-card-header">
-                        <span class="auto-badge"></span>
-                        
-                        <span class="job-date"><span class="material-icons">schedule</span> <span class="dynamic-time" data-date="2026-03-12"></span></span>
-                    </div>
-                    <h2>Assam Police Constable Recruitment 2026</h2>
-                    <p class="job-dept">SLPRB Assam</p>
-                    <div class="job-meta-grid">
-                        <div class="meta-item"><span class="material-icons">school</span> 10th/12th Pass</div>
-                        <div class="meta-item"><span class="material-icons">event</span> Last Date: 25 Mar 2026</div>
-                    </div>
-                    <a href="job-details.html" class="job-action-btn">View Details <span class="material-icons">arrow_forward</span></a>
-                </article>
+                <div id="jobList" class="jobList">
+                    
+                    <article class="job-card glass-panel" aria-labelledby="job1-title">
+                        <div class="job-card-header">
+                            <span class="auto-badge"></span>
+                            <span class="job-date"><span class="material-icons" aria-hidden="true">schedule</span> <span class="dynamic-time" data-date="2026-03-12"></span></span>
+                        </div>
+                        <h2 id="job1-title">Assam Police Constable Recruitment 2026</h2>
+                        <p class="job-dept">SLPRB Assam</p>
+                        <div class="job-meta-grid">
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">school</span> 10th/12th Pass</div>
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">event</span> Last Date: 25 Mar 2026</div>
+                        </div>
+                        <a href="job-details.html" class="job-action-btn" aria-label="View details for Assam Police Constable">View Details <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                    </article>
 
-                <div class="in-feed-ad-banner glass-panel">
-                    <span class="material-icons">monetization_on</span>
-                    <span>AdSense In-Feed Banner</span>
-                    <small>Standard Size (e.g., 728x90 or Fluid)</small>
-                </div>
+                    <article class="job-card glass-panel" aria-labelledby="job2-title">
+                        <div class="job-card-header">
+                            <span class="job-badge admit">📝 Admit Card</span>
+                            <span class="job-date"><span class="material-icons" aria-hidden="true">schedule</span> <span class="dynamic-time" data-date="2026-03-10"></span></span>
+                        </div>
+                        <h2 id="job2-title">ADRE Grade III Written Exam Admit Card</h2>
+                        <p class="job-dept">State Level Recruitment Commission</p>
+                        <div class="job-meta-grid">
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">school</span> Graduate</div>
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">event</span> Exam: 10 Apr 2026</div>
+                        </div>
+                        <a href="job-details.html" class="job-action-btn" aria-label="Download Admit Card for ADRE Grade III">Download Now <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                    </article>
 
-                <article class="job-card glass-panel">
-                    <div class="job-card-header">
-                        <span class="job-badge admit">📝 Admit Card</span>
-                        
-                        <span class="job-date"><span class="material-icons">schedule</span> <span class="dynamic-time" data-date="2026-03-10"></span></span>
-                    </div>
-                    <h2>ADRE Grade III Written Exam Admit Card</h2>
-                    <p class="job-dept">State Level Recruitment Commission</p>
-                    <div class="job-meta-grid">
-                        <div class="meta-item"><span class="material-icons">school</span> Graduate</div>
-                        <div class="meta-item"><span class="material-icons">event</span> Exam: 10 Apr 2026</div>
-                    </div>
-                    <a href="job-details.html" class="job-action-btn">Download Now <span class="material-icons">arrow_forward</span></a>
-                </article>
+                    <article class="job-card glass-panel" aria-labelledby="job3-title">
+                        <div class="job-card-header">
+                            <span class="auto-badge"></span>
+                            <span class="job-date"><span class="material-icons" aria-hidden="true">schedule</span> <span class="dynamic-time" data-date="2026-02-28"></span></span>
+                        </div>
+                        <h2 id="job3-title">SSC GD Constable Recruitment - 20,000+ Posts</h2>
+                        <p class="job-dept">Staff Selection Commission</p>
+                        <div class="job-meta-grid">
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">school</span> 10th Pass</div>
+                            <div class="meta-item"><span class="material-icons" aria-hidden="true">event</span> Last Date: Closed</div>
+                        </div>
+                        <a href="job-details.html" class="job-action-btn" aria-label="View details for SSC GD Constable">View Details <span class="material-icons" aria-hidden="true">arrow_forward</span></a>
+                    </article>
 
-                <article class="job-card glass-panel">
-                    <div class="job-card-header">
-                        <span class="auto-badge"></span>
-                        
-                        <span class="job-date"><span class="material-icons">schedule</span> <span class="dynamic-time" data-date="2026-02-28"></span></span>
-                    </div>
-                    <h2>SSC GD Constable Recruitment - 20,000+ Posts</h2>
-                    <p class="job-dept">Staff Selection Commission</p>
-                    <div class="job-meta-grid">
-                        <div class="meta-item"><span class="material-icons">school</span> 10th Pass</div>
-                        <div class="meta-item"><span class="material-icons">event</span> Last Date: Closed</div>
-                    </div>
-                    <a href="job-details.html" class="job-action-btn">View Details <span class="material-icons">arrow_forward</span></a>
-                </article>
-
-                <div class="pagination">
-                    <a href="#" class="page-btn active">1</a>
+                </div> <nav class="pagination" aria-label="Job pagination">
+                    <a href="#" class="page-btn active" aria-current="page">1</a>
                     <a href="#" class="page-btn">2</a>
                     <a href="#" class="page-btn">3</a>
-                    <a href="#" class="page-btn next">Next <span class="material-icons">chevron_right</span></a>
-                </div>
+                    <a href="#" class="page-btn next">Next <span class="material-icons" aria-hidden="true">chevron_right</span></a>
+                </nav>
 
             </div>
         </main>
         
-<footer class="main-footer glass-panel">
-    <div class="footer-content">
-        <div class="footer-brand">
-            <h2>Niyukti<span>Assam</span></h2>
-            <p>Empowering the youth of Assam with the latest job updates, premium study materials, and smart career tools.</p>
-            
-            <div class="footer-social">
-                <h4>Connect & Share</h4>
-                <div class="social-icons-wrapper">
+        <footer class="main-footer glass-panel">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Niyukti<span>Assam</span></h2>
+                    <p>Empowering the youth of Assam with the latest job updates, premium study materials, and smart career tools.</p>
                     
-                    <a href="#" id="footer-share-btn" class="social-btn" title="Share Website">
-                        <span class="material-icons">share</span>
-                    </a>
-                    
-                    <a href="https://www.facebook.com/profile.php?id=61578835168791" target="_blank" rel="noopener noreferrer" class="social-btn" title="Follow on Facebook">
-                        <span class="material-icons">facebook</span>
-                    </a>
-                    
-                    <a href="https://www.instagram.com/sahabbarali_08/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Follow on Instagram">
-                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
+                    <div class="footer-social">
+                        <h4>Connect & Share</h4>
+                        <div class="social-icons-wrapper">
+                            <button id="footer-share-btn" class="social-btn" title="Share Website" aria-label="Share Website" style="border:none; cursor:pointer;">
+                                <span class="material-icons">share</span>
+                            </button>
+                            <a href="https://www.facebook.com/profile.php?id=61578835168791" target="_blank" rel="noopener noreferrer" class="social-btn" title="Follow on Facebook" aria-label="Facebook">
+                                <span class="material-icons">facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/sahabbarali_08/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Follow on Instagram" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/916913502001" target="_blank" rel="noopener noreferrer" class="social-btn" title="Join our WhatsApp" aria-label="WhatsApp">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                    <a href="https://wa.me/916913502001" target="_blank" rel="noopener noreferrer" class="social-btn" title="Join our WhatsApp">
-                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-                        </svg>
-                    </a>
-                    
+                <div class="footer-links">
+                    <h3>Explore Portal</h3>
+                    <a href="jobs.html"><span class="material-icons">chevron_right</span> Latest Jobs</a>
+                    <a href="study.html"><span class="material-icons">chevron_right</span> Study Materials</a>
+                    <a href="resume.html"><span class="material-icons">chevron_right</span> Resume Generator</a>
+                </div>
+
+                <div class="footer-legal">
+                    <h3>Legal & Support</h3>
+                    <a href="about.html"><span class="material-icons">chevron_right</span> About Us</a>
+                    <a href="contact.html"><span class="material-icons">chevron_right</span> Contact Us</a>
+                    <a href="privacy.html"><span class="material-icons">chevron_right</span> Privacy Policy</a>
+                    <a href="disclaimer.html"><span class="material-icons">chevron_right</span> Disclaimer</a>
                 </div>
             </div>
-        </div>
-
-        <div class="footer-links">
-            <h3>Explore Portal</h3>
-            <a href="jobs.html"><span class="material-icons">chevron_right</span> Latest Jobs</a>
-            <a href="study.html"><span class="material-icons">chevron_right</span> Study Materials</a>
-            <a href="resume.html"><span class="material-icons">chevron_right</span> Resume Generator</a>
-        </div>
-
-        <div class="footer-legal">
-            <h3>Legal & Support</h3>
-            <a href="about.html"><span class="material-icons">chevron_right</span> About Us</a>
-            <a href="contact.html"><span class="material-icons">chevron_right</span> Contact Us</a>
-            <a href="privacy.html"><span class="material-icons">chevron_right</span> Privacy Policy</a>
-            <a href="disclaimer.html"><span class="material-icons">chevron_right</span> Disclaimer</a>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>All rights reserved &copy; NiyuktiAssam. Designed by SA Khan</p>
-    </div>
-</footer>
+            
+            <div class="footer-bottom">
+                <p>All rights reserved &copy; NiyuktiAssam. Designed by SA Khan</p>
+            </div>
+        </footer>
     </div>
 
     <script>
+        // Clean, Unified JS Block
         document.addEventListener("DOMContentLoaded", function() {
             
             // --- 1. LIVE SEARCH LOGIC ---
@@ -171,11 +187,14 @@
 
             if(searchInput) {
                 searchInput.addEventListener("input", function() {
-                    const query = searchInput.value.toLowerCase();
+                    const query = searchInput.value.toLowerCase().trim();
 
                     jobCards.forEach(function(card) {
-                        const cardText = card.textContent.toLowerCase();
-                        if (cardText.includes(query)) {
+                        // Better targeting: only search within title and dept to avoid false positives
+                        const title = card.querySelector('h2').textContent.toLowerCase();
+                        const dept = card.querySelector('.job-dept').textContent.toLowerCase();
+                        
+                        if (title.includes(query) || dept.includes(query)) {
                             card.style.display = ""; 
                         } else {
                             card.style.display = "none"; 
@@ -184,7 +203,7 @@
                 });
             }
 
-            // --- 2. AUTO DATE & BADGE LOGIC ---
+            // --- 2. AUTO DATE & BADGE LOGIC (Robust Version) ---
             const today = new Date();
             today.setHours(0, 0, 0, 0); 
 
@@ -195,29 +214,35 @@
                 if (!postDateString) return;
 
                 const postDate = new Date(postDateString);
+                // Simple validation to ensure date is valid
+                if(isNaN(postDate.getTime())) return; 
+
                 postDate.setHours(0, 0, 0, 0);
+                
+                // Calculate difference considering past and future
+                const diffTime = today - postDate;
+                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)); 
 
-                const diffTime = Math.abs(today - postDate);
-                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-
-                // Dynamic Text
+                // Dynamic Text Generation
                 if (diffDays === 0) {
                     el.textContent = "Posted Today";
                     el.style.color = "#2ecc71";
                     el.style.fontWeight = "600";
                 } else if (diffDays === 1) {
                     el.textContent = "Posted Yesterday";
-                } else {
+                } else if (diffDays > 1) {
                     el.textContent = `Posted ${diffDays} days ago`;
+                } else {
+                    el.textContent = "Upcoming"; // Handle future dates just in case
                 }
 
-                // Auto 'New Update' Badge
+                // Auto 'New Update' Badge Logic
                 const cardHeader = el.closest('.job-card-header');
                 if (cardHeader) {
                     const badge = cardHeader.querySelector('.auto-badge');
                     if (badge) {
-                        if (diffDays <= 3) {
-                            badge.innerHTML = " New Update";
+                        if (diffDays >= 0 && diffDays <= 3) {
+                            badge.innerHTML = "✨ New Update";
                             badge.className = "job-badge new auto-badge";
                             badge.style.display = "inline-block";
                         } else {
@@ -226,38 +251,35 @@
                     }
                 }
             });
-        });
 
-
-        document.addEventListener("DOMContentLoaded", function() {
-        const shareBtn = document.getElementById('footer-share-btn');
-        
-        shareBtn.addEventListener('click', async function(e) {
-            e.preventDefault(); // Default click ko rokna
+            // --- 3. UNIFIED SHARE LOGIC ---
+            const shareBtn = document.getElementById('footer-share-btn');
             
-            // Current website ka main URL (homepage) get karna
-            const websiteUrl = window.location.origin; 
-            const websiteTitle = "NiyuktiAssam"; // Yahan apni website ka naam daalein
-            
-            // Check karna ki browser Web Share API support karta hai ya nahi (Mobile browsers karte hain)
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: websiteTitle,
-                        text: "Check out this awesome job portal for the latest updates!",
-                        url: websiteUrl
-                    });
-                    console.log('Website shared successfully');
-                } catch (err) {
-                    console.log('Error sharing:', err);
-                }
-            } else {
-                // Agar PC/Desktop hai aur share support nahi karta, toh Link Copy kar dega
-                navigator.clipboard.writeText(websiteUrl);
-                alert("Share now...");
+            if(shareBtn) {
+                shareBtn.addEventListener('click', async function(e) {
+                    e.preventDefault(); 
+                    
+                    const websiteUrl = window.location.origin + window.location.pathname; 
+                    const websiteTitle = "NiyuktiAssam - Latest Govt Jobs"; 
+                    
+                    if (navigator.share) {
+                        try {
+                            await navigator.share({
+                                title: websiteTitle,
+                                text: "Check out the latest job updates on NiyuktiAssam!",
+                                url: websiteUrl
+                            });
+                        } catch (err) {
+                            console.error('Error sharing:', err);
+                        }
+                    } else {
+                        navigator.clipboard.writeText(websiteUrl)
+                            .then(() => alert("Link copied to clipboard! Share it with your friends."))
+                            .catch(err => console.error('Failed to copy text: ', err));
+                    }
+                });
             }
         });
-    });
     </script>
 </body>
 </html>

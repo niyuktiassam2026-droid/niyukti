@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Premium Free Resume Builder | NiyuktiAssam</title>
+    <meta name="description" content="Build your MNC & Govt ready ATS friendly resume in 5 minutes. 100% Free.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NiyuktiAssam Modern Teal Resume Builder",
+  "operatingSystem": "Web",
+  "applicationCategory": "BusinessApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "description": "Create a modern, ATS-friendly resume for MNCs and private sector jobs in 5 minutes. 100% free online CV maker."
+}
+</script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header glass-panel">
+        <div class="header-container">
+            <div class="brand">
+                <img src="logo.png" alt="NiyuktiAssam Logo" class="logo-img">
+                <div class="logo-text">Niyukti<span>Assam</span></div>
+            </div>
+            <nav class="top-tabs" aria-label="Main Navigation">
+                <a href="index.html" class="tab"><span class="material-icons">home</span> Home</a>
+                <a href="jobs.html" class="tab"><span class="material-icons">work</span> Jobs</a>
+                <a href="resume.html" class="tab active"><span class="material-icons">description</span> Resume</a>
+                <a href="study.html" class="tab"><span class="material-icons">menu_book</span> Study</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+        <main class="content-area">
+            
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1 style="font-size: 2.2rem; color: #1a252f;">Premium Resume Builder</h1>
+                <p style="color: #444;">100% Free. ATS Friendly. No Login Required.</p>
+            </div>
+
+            <div class="workspace">
+                
+                <div class="editor-panel">
+                    
+                    <label class="img-upload-btn">
+                        <span class="material-icons">add_a_photo</span> Upload Professional Photo
+                        <input type="file" id="inp_image" accept="image/*" onchange="loadImage(event)">
+                    </label>
+
+                    <div class="acc-item glass-panel">
+                        <div class="acc-header active" onclick="toggleAcc('acc1', this)">1. Basic Identity <span class="material-icons">expand_more</span></div>
+                        <div class="acc-content active" id="acc1">
+                            <div class="grid-2">
+                                <div class="form-group"><label>First Name</label><input type="text" class="form-control" id="inp_fname" value="Rahul" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Last Name</label><input type="text" class="form-control" id="inp_lname" value="Sharma" onkeyup="updateLive()"></div>
+                            </div>
+                            <div class="form-group"><label>Job Title / Applying For</label><input type="text" class="form-control" id="inp_title" value="ASSISTANT ENGINEER" onkeyup="updateLive()"></div>
+                            <div class="form-group"><label>Profile Summary</label><textarea class="form-control" id="inp_summary" rows="4" onkeyup="updateLive()">A highly motivated and detail-oriented professional seeking to leverage my skills and academic background in a challenging government or corporate environment.</textarea></div>
+                        </div>
+                    </div>
+
+                    <div class="acc-item glass-panel">
+                        <div class="acc-header" onclick="toggleAcc('acc2', this)">2. Contact & Personal Details <span class="material-icons">expand_more</span></div>
+                        <div class="acc-content" id="acc2">
+                            <div class="grid-2">
+                                <div class="form-group"><label>Email</label><input type="email" class="form-control" id="inp_email" value="rahul@gmail.com" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Phone</label><input type="text" class="form-control" id="inp_phone" value="+91 98765 43210" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Location / City</label><input type="text" class="form-control" id="inp_loc" value="Guwahati, Assam" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>LinkedIn</label><input type="text" class="form-control" id="inp_link" value="linkedin.com/in/rahul" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Father's Name</label><input type="text" class="form-control" id="inp_father" value="Mr. Anil Sharma" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Mother's Name</label><input type="text" class="form-control" id="inp_mother" value="Mrs. Sunita Sharma" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Date of Birth</label><input type="text" class="form-control" id="inp_dob" value="15-08-1998" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Gender & Category</label><input type="text" class="form-control" id="inp_cast" value="Male | General" onkeyup="updateLive()"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acc-item glass-panel">
+                        <div class="acc-header" onclick="toggleAcc('acc3', this)">3. Education & Certifications <span class="material-icons">expand_more</span></div>
+                        <div class="acc-content" id="acc3">
+                            <h4 style="margin-bottom:10px; color:#008c95;">Highest Degree</h4>
+                            <div class="form-group"><label>Degree Name</label><input type="text" class="form-control" id="inp_edu1_deg" value="B.TECH (CIVIL)" onkeyup="updateLive()"></div>
+                            <div class="grid-2">
+                                <div class="form-group"><label>University</label><input type="text" class="form-control" id="inp_edu1_uni" value="Assam Engg College" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Year</label><input type="text" class="form-control" id="inp_edu1_year" value="2018 - 2022" onkeyup="updateLive()"></div>
+                            </div>
+                            
+                            <h4 style="margin:15px 0 10px; color:#008c95;">Certifications / ITI / Diplomas</h4>
+                            <div class="grid-2">
+                                <div class="form-group"><label>Course 1 Name</label><input type="text" class="form-control" id="inp_oq1_name" value="PGDCA" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Institute & Year</label><input type="text" class="form-control" id="inp_oq1_meta" value="AMTRON | 2023" onkeyup="updateLive()"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acc-item glass-panel">
+                        <div class="acc-header" onclick="toggleAcc('acc4', this)">4. Experience & Projects <span class="material-icons">expand_more</span></div>
+                        <div class="acc-content" id="acc4">
+                            <div class="form-group"><label>Company Name (Blank if fresher)</label><input type="text" class="form-control" id="inp_exp1_comp" value="PWD ASSAM" onkeyup="updateLive()"></div>
+                            <div class="grid-2">
+                                <div class="form-group"><label>Role</label><input type="text" class="form-control" id="inp_exp1_role" value="Junior Engineer" onkeyup="updateLive()"></div>
+                                <div class="form-group"><label>Duration</label><input type="text" class="form-control" id="inp_exp1_date" value="Jan 2023 - Present" onkeyup="updateLive()"></div>
+                            </div>
+                            <div class="form-group"><label>Job Description (Use dots for bullets)</label><textarea class="form-control" id="inp_exp1_desc" rows="3" onkeyup="updateLive()">• Supervised daily construction activities.
+• Maintained quality control reports.</textarea></div>
+                            
+                            <h4 style="margin:15px 0 10px; color:#008c95;">Extracurriculars / Projects</h4>
+                            <div class="form-group"><textarea class="form-control" id="inp_otherexp" rows="3" onkeyup="updateLive()">• NCC 'C' Certificate Holder.
+• Volunteered in Assam Floods 2022.</textarea></div>
+                        </div>
+                    </div>
+
+                    <div class="acc-item glass-panel">
+                        <div class="acc-header" onclick="toggleAcc('acc5', this)">5. Skills & Languages <span class="material-icons">expand_more</span></div>
+                        <div class="acc-content" id="acc5">
+                            <div class="form-group"><label>Skills (Comma separated)</label><input type="text" class="form-control" id="inp_skills" value="AutoCAD, MS Office, Field Survey" onkeyup="updateLive()"></div>
+                            <div class="form-group"><label>Languages (Comma separated)</label><input type="text" class="form-control" id="inp_langs" value="Assamese: Native, English: Fluent" onkeyup="updateLive()"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="preview-panel">
+                    <div class="download-btn-container">
+                        <button class="action-btn" onclick="downloadResume()" style="padding: 15px 40px; font-size: 1.1rem; width:100%; max-width: 400px; box-shadow: 0 10px 25px rgba(0, 140, 149, 0.4); background: #008c95;">
+                            <span class="material-icons">download</span> Download High-Quality PDF
+                        </button>
+                    </div>
+
+                    <div class="a4-wrapper" id="pdf-wrapper">
+                        <div class="a4-document" id="print-area">
+                            
+                            <div class="res-top-white">
+                                <div class="res-name-box">
+                                    <h1 class="res-name"><span id="out_fname">Rahul</span><br><span id="out_lname">Sharma</span></h1>
+                                </div>
+                            </div>
+
+                            <div class="res-teal-band">
+                                <div class="res-job-title" id="out_title">ASSISTANT ENGINEER</div>
+                            </div>
+
+                            <div class="res-profile-img">
+                                <img id="out_image" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Profile">
+                            </div>
+
+                            <div class="res-body">
+                                <div class="res-left">
+                                    <div id="sec_personal">
+                                        <div class="res-heading">PERSONAL DETAILS</div>
+                                        <div class="res-personal-item" id="div_father"><strong>Father:</strong> <span id="out_father">Mr. Anil Sharma</span></div>
+                                        <div class="res-personal-item" id="div_mother"><strong>Mother:</strong> <span id="out_mother">Mrs. Sunita Sharma</span></div>
+                                        <div class="res-personal-item" id="div_dob"><strong>D.O.B:</strong> <span id="out_dob">15-08-1998</span></div>
+                                        <div class="res-personal-item" id="div_cast"><strong>Cat/Gender:</strong> <span id="out_cast">Male | General</span></div>
+                                    </div>
+
+                                    <div class="res-heading">CONTACT INFO</div>
+                                    <div class="res-contact-item"><span class="material-icons">email</span> <span id="out_email">rahul@gmail.com</span></div>
+                                    <div class="res-contact-item"><span class="material-icons">phone</span> <span id="out_phone">+91 98765 43210</span></div>
+                                    <div class="res-contact-item"><span class="material-icons">location_on</span> <span id="out_loc">Guwahati, Assam</span></div>
+                                    <div class="res-contact-item" id="div_link"><strong style="font-size: 13px;">in</strong> <span id="out_link">linkedin.com/in/rahul</span></div>
+
+                                    <div class="res-heading">PROFILE SUMMARY</div>
+                                    <div class="res-summary" id="out_summary">A highly motivated and detail-oriented professional seeking to leverage my skills and academic background in a challenging government or corporate environment.</div>
+
+                                    <div class="res-heading">SKILLS</div>
+                                    <ul class="res-list" id="out_skills">
+                                        <li>AutoCAD</li>
+                                        <li>MS Office</li>
+                                        <li>Field Survey</li>
+                                    </ul>
+
+                                    <div class="res-heading">LANGUAGES</div>
+                                    <ul class="res-list" id="out_langs">
+                                        <li>Assamese: Native</li>
+                                        <li>English: Fluent</li>
+                                    </ul>
+                                </div>
+
+                                <div class="res-right">
+                                    <div id="sec_exp">
+                                        <div class="res-heading">PROFESSIONAL EXPERIENCE</div>
+                                        <div class="res-exp-item">
+                                            <span class="res-exp-title" id="out_exp1_comp">PWD ASSAM</span>
+                                            <span class="res-exp-role" id="out_exp1_role">Junior Engineer</span>
+                                            <span class="res-exp-meta"><span id="out_exp1_date">Jan 2023 - Present</span></span>
+                                            <ul class="res-exp-desc" id="out_exp1_desc">
+                                                <li>Supervised daily construction activities.</li>
+                                                <li>Maintained quality control reports.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="res-heading">EDUCATION</div>
+                                    <div class="res-exp-item">
+                                        <span class="res-exp-title" id="out_edu1_deg">B.TECH (CIVIL)</span>
+                                        <span class="res-exp-role" id="out_edu1_uni">Assam Engg College</span>
+                                        <span class="res-exp-meta"><span id="out_edu1_year">2018 - 2022</span></span>
+                                    </div>
+
+                                    <div id="sec_oq">
+                                        <div class="res-heading">OTHER QUALIFICATIONS</div>
+                                        <div class="res-exp-item" id="div_oq1">
+                                            <span class="res-exp-title" id="out_oq1_name">PGDCA</span>
+                                            <span class="res-exp-role" id="out_oq1_meta" style="color:#666;">AMTRON | 2023</span>
+                                        </div>
+                                    </div>
+
+                                    <div id="sec_otherexp">
+                                        <div class="res-heading">OTHER EXPERIENCES & EXPERTISE</div>
+                                        <ul class="res-exp-desc" id="out_otherexp" style="margin-left: 0; padding-left: 15px;">
+                                            <li>NCC 'C' Certificate Holder.</li>
+                                            <li>Volunteered in Assam Floods 2022.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-text-body" style="margin-top: 60px; padding: 35px; background: rgba(255, 255, 255, 0.6); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);">
+                <h2 style="font-size: 1.8rem; color: #1a252f; margin-bottom: 15px;">How to Create Your ATS-Friendly Resume in 5 Minutes</h2>
+                
+                <p>Are you tired of your job applications getting ignored? Whether you are aiming for prestigious <strong>Assam Govt Jobs</strong> (like ADRE, SLPRB, and Assam Police) or applying to top MNCs, your resume needs to pass the strict ATS (Applicant Tracking System) software test.</p>
+                
+                <p>We built the NiyuktiAssam Premium Resume Builder to make this process completely free, private, and effortless. No more paying cyber cafes for outdated formats! Here is exactly how you can build a winning CV right now:</p>
+
+                <h3 style="font-size: 1.3rem; color: #008c95; margin-top: 30px; margin-bottom: 15px;">Step-by-Step Guide to Using This Tool</h3>
+                <ul style="margin-left: 20px; line-height: 1.8; color: #222; font-weight: 500;">
+                    <li style="margin-bottom: 10px;"><strong>Step 1: Fill in Your Identity:</strong> Start by uploading a clear, professional photo. Enter your basic details like Name, Father's Name, and Category. <em>Pro Tip: Government boards strictly verify these exact fields during document verification.</em></li>
+                    <li style="margin-bottom: 10px;"><strong>Step 2: Add Your Education & Skills:</strong> Click on the dropdown sections on the left panel to add your highest qualification, ITI/Diplomas, and core skills. Keep your job descriptions in short bullet points so HR managers can read them quickly.</li>
+                    <li style="margin-bottom: 10px;"><strong>Step 3: Check the Live Preview:</strong> As you type on the left side, watch your resume magically build itself on the right side! You can see exactly how the final printed A4 page will look in real-time.</li>
+                    <li style="margin-bottom: 10px;"><strong>Step 4: Download in HD:</strong> Once you are 100% satisfied, simply click the <strong>"Download High-Quality PDF"</strong> button. Your professional resume will save instantly to your mobile or laptop.</li>
+                </ul>
+
+                <h3 style="font-size: 1.3rem; color: #008c95; margin-top: 30px; margin-bottom: 15px;">Why is this the Best Resume Maker for You?</h3>
+                <p>Unlike other websites that ask for credit cards or expensive subscriptions at the last minute, our tool is genuinely <strong>100% free forever</strong>. </p>
+                
+                <p>More importantly, we deeply respect your privacy. We operate on a strict <strong>Zero-Data Storage Policy</strong>—meaning your personal phone number, home address, and data never leave your browser. We do not save your PDF on our servers. Once you close this tab, your data disappears safely.</p>
+                
+                <p style="margin-top: 25px; font-weight: 600; color: #1a252f; text-align: center; font-size: 1.1rem;">Ready to get hired? Scroll back up, fill in your details, and download your dream resume today!</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+</html>

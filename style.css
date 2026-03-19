@@ -80,7 +80,7 @@ body {
 .action-btn { 
     display: inline-flex; align-items: center; justify-content: center; gap: 8px; 
     background: var(--primary-blue); color: white; border: none; padding: 15px 40px; 
-    border-radius: 50px; font-size: 1.1rem; font-weight: 600; text-decoration: none;
+    border-radius: 50px; font-size: 12px; font-weight: 600; text-decoration: none;
     box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4); cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; 
 }
 .action-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(74, 144, 226, 0.6); background: var(--primary-hover); }
